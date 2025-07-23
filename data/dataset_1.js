@@ -1,12 +1,12 @@
 const data = {
-    "customers": [
+    "customers": [ // Коллекция покупателей
         {
-            "id": "customer_1",
-            "first_name": "Andrey",
-            "last_name": "Alekseev",
-            "phone": "+79296758019",
-            "workplace": "SteelWorks",
-            "position": "Worker"
+            "id": "customer_1", // Уникальный идентификатор покупателя
+            "first_name": "Andrey", // Имя покупателя
+            "last_name": "Alekseev", // Фамилия покупателя
+            "phone": "+79296758019", // Контактный телефон, уникальный (но не точно)
+            "workplace": "SteelWorks", // Место работы
+            "position": "Worker" // Должность
         },
         {
             "id": "customer_2",
@@ -81,13 +81,13 @@ const data = {
             "position": "Manager"
         }
     ],
-    "products": [
+    "products": [ // Коллекция товаров
         {
-            "name": "Cement #100",
-            "category": "Paints",
-            "sku": "SKU_001",
-            "purchase_price": 460.34,
-            "sale_price": 699.99
+            "name": "Cement #100", // Наименование
+            "category": "Paints", // Категория
+            "sku": "SKU_001", // Уникальный артикул
+            "purchase_price": 460.34, // За сколько магазин покупает товар
+            "sale_price": 699.99 // За сколько магазин планирует продавать товар
         },
         {
             "name": "Hammer #101",
@@ -783,13 +783,13 @@ const data = {
             "sale_price": 180.25
         }
     ],
-    "sellers": [
+    "sellers": [ // Коллекция продавцов
         {
-            "id": "seller_1",
-            "first_name": "Alexey",
-            "last_name": "Petrov",
-            "start_date": "2024-07-17",
-            "position": "Senior Seller"
+            "id": "seller_1", // Уникальный идентификатор продавца
+            "first_name": "Alexey", // Имя продавца
+            "last_name": "Petrov", // Фамилия
+            "start_date": "2024-07-17", // Когда начал работать в магазине
+            "position": "Senior Seller" // Текущая должность
         },
         {
             "id": "seller_2",
@@ -820,18 +820,18 @@ const data = {
             "position": "Seller"
         }
     ],
-    "purchase_records": [
+    "purchase_records": [ // Коллекция записей о продажах, чеки
         {
-            "receipt_id": "receipt_1",
-            "date": "2023-12-04",
-            "seller_id": "seller_5",
-            "customer_id": "customer_1",
-            "items": [
+            "receipt_id": "receipt_1", // Уникальный идентификатор чека
+            "date": "2023-12-04", // Дата покупки
+            "seller_id": "seller_5", // Идентификатор продавца
+            "customer_id": "customer_1", // Идентификатор покупателя
+            "items": [ // Перечень купленных товаров
                 {
-                    "sku": "SKU_027",
-                    "discount": 7.68,
-                    "quantity": 1,
-                    "sale_price": 919.07
+                    "sku": "SKU_027", // Артикул товара
+                    "discount": 7.68, // Скидка от продавца (в процентах)
+                    "quantity": 1, // Сколько единиц конкретного товара куплено
+                    "sale_price": 919.07 // Цена в момент продажи без учёта скидки
                 },
                 {
                     "sku": "SKU_091",
@@ -858,8 +858,8 @@ const data = {
                     "sale_price": 439.65
                 }
             ],
-            "total_amount": 4657.56,
-            "total_discount": 271.71
+            "total_amount": 4657.56, // Общая сумма чека без скидки
+            "total_discount": 271.71 // Общая сумма скидки с чека (в рублях)
         },
         {
             "receipt_id": "receipt_2",
